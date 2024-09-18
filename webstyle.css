@@ -1,0 +1,453 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Update the font-family here */
+}
+
+
+/* Add or modify this in your webstyle.css file */
+.section-divider {
+    width: 50%; /* Full width */
+    height: 5px; /* One pixel high */
+    background-color: #000000; /* Dark gray color for visibility */
+    border: none; /* No border */
+    margin-top: 2rem; /* 32px top margin */
+    margin-bottom: 2rem; /* 32px bottom margin */
+}
+
+
+
+.content {
+    /* Inherits the hero background properties */
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, rgba(135, 206, 235, 0.5), rgba(255, 255, 255, 0)), url('path-to-your-background-image.jpg') center/cover no-repeat;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.content h1 {
+    font-size: 20em; /* Or whatever size matches your 'Hi, I'm Youseph' header */
+    
+    margin-bottom: 40px; /* Adjust this as necessary for space between the header and the image */
+    
+}
+
+/* This style will apply to all h1 elements within the .content class, which should be on your main tag */
+.content h1, .content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3em; /* Or whatever size matches your 'Hi, I'm Youseph' header */
+    color: #000;
+}
+
+.content p, .content ul {
+    font-family: 'Roboto', sans-serif; /* This is just an example; choose any font you like */
+    font-size: 1em;
+    color: #333; /* You can adjust this color to whatever you prefer */
+}
+
+
+
+nav .logo, nav ul li a {
+    font-weight: bold !important;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+
+.content li {
+    margin-bottom: 10px; /* Adds space between bullet points */
+}
+
+
+
+/* Apply a border to all images within .content if you don't have a specific class for the image */
+.content img {
+    margin-top: 20px;
+    max-width: 50%; /* or 500px or any other fixed size that looks good */
+    border-radius: 25px; /* Rounded corners */
+    border: 5px solid #000000; /* Thick black border */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area */
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+.content .about-text {
+    color: #000000;
+    text-align: left; /* Aligns text to the left for a more natural reading experience */
+    margin-top: 20px;
+}
+
+.content .about-text h2 {
+    margin-top: 0;
+}
+
+.content .about-section {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow for depth */
+    
+    border-radius: 15px; /* Optional: if you want rounded corners on the article background */
+}
+
+
+
+.content img, .side-img, .main-img, .profile-img {
+    border-radius: 0; /* Makes borders square */
+    /* Ensure other styles are correctly applied, like width, margin, etc. */
+}
+
+.main-img, .side-img {
+    margin-top: 20px; /* Adds top margin */
+    margin-bottom: 20px; /* Adds bottom margin, adjust as necessary */
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px; /* Reduced right padding */
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0; /* Ensure there's no default margin */
+}
+
+nav ul li {
+    padding: 0 10px; /* Reduced padding to move items towards the left */
+}
+
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+nav ul li a {
+    font-weight: bold; /* Makes the text bold */
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+}
+
+
+
+
+
+
+
+nav ul li a:hover {
+    color: #07448f; /* Changes color on hover */
+    text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust space between images */
+}
+
+/* Style for the main central image */
+.main-img {
+    flex: 0 0 30%; /* Flex basis set to 30%, flex-grow and flex-shrink set to 0 */
+    width: 30%; /* Explicit width set to 30% */
+    border: 5px solid #000000;
+    height: auto;
+    border-radius: 0; /* Square borders for the main image */
+}
+
+/* Style for smaller side images */
+.side-img {
+    width: 25%; /* Adjust size as necessary */
+    border: 3px solid #000000; /* Solid border */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto; /* Centering the image */
+}
+
+/* Ensure images are not stretched and have square borders */
+img {
+    max-width: 100%; /* Ensures image does not overflow its container */
+    object-fit: cover; /* Ensures the content of the image fits the height and width without distortion */
+    display: block;
+    margin: auto; /* Center images */
+    border-radius: 50; /* Enforces square borders for any other images */
+}
+
+
+
+/* Style for profile images */
+.profile-img {
+    max-width: 40%; /* Smaller width, adjust as needed */
+    border-radius: 0; /* Square borders */
+    border: 5px solid #000000;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px; /* Space below images */
+}
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(135, 206, 235, 0.5), rgba(255, 255, 255, 0)), url('path-to-your-background-image.jpg') center/cover no-repeat;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 4em; /* Adjusted size for a thicker look */
+    font-weight: 900; /* 900 weight for extra bold text */
+    color: #000000;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-weight: 700; /* 700 for bold, but not as thick as the h1 */
+    color: #000000;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #081f35;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.button-container {
+    padding: 0 20px; /* Adjust padding to ensure content is within the border */
+    /* Rest of your styles... */
+}
+
+.cta-button:hover {
+    background-color: #6994c1;
+}
+
+
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.about-content section {
+    margin-bottom: 40px;
+}
+
+.about-content h1 {
+    padding-top: 20px; /* Or enough to push it down from the navbar */
+    /* other styles... */
+}
+.about-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content img {
+    display: block;
+    max-width: 200px;
+    margin: 20px auto;
+    border-radius: 50%; /* circular image */
+}
+
+
+
+footer, footer a {
+    font-weight: bold !important; /* Makes the text bold */
+    color: #000000; /* Ensures text color is consistent */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% of the viewport height */
+    margin: 0;
+}
+
+main.content {
+    flex-grow: 1; /* Takes up all available space */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Ensure the footer does not grow but stays at the bottom */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+.github-header {
+    font-size: 1.5em; /* Smaller font size for the header */
+    margin-bottom: 0; /* Reduced space below the header */
+    margin-top: 20px; /* Move up the text */
+}
+
+.github-section {
+    border: none;
+    text-align: center;
+    font-size: 0.650em; /* Smaller font size for the section */
+    padding: -500px;
+    margin-bottom: 20px; /* Spacing before project listings */
+}
+
+
+.github-logo {
+    
+    border: none; /* Removes border */
+    max-width: 100px; /* Size of the GitHub logo */
+    display: block; /* To allow margin auto to center the image */
+    margin: 10px auto 0; /* Center the logo horizontally and remove margin from the bottom */
+    
+}
+
+
+.github-link {
+    position: relative; /* Allows absolute positioning of child elements like the gif */
+}
+
+
+
+
+.project-showcase {
+    display: flex;
+    flex-direction: column; /* Use 'row' if you want the projects side by side */
+    align-items: center; /* Centers the projects */
+    gap: 20px; /* Spacing between projects */
+}
+
+.project {
+    border: 1px solid #ccc; /* Adds a border to each project */
+    padding: 15px;
+    max-width: 800px; /* Adjust width as needed */
+    text-align: center; /* Center text within each project */
+}
+
+/* Responsive design for smaller screens, you can adjust the breakpoint as needed */
+@media (max-width: 768px) {
+    .project-showcase {
+        flex-direction: column;
+    }
+}
+
+
+.project-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Adjust the space between projects as necessary */
+    margin-top: 30px;
+}
+
+.project {
+    width: 100%;
+    max-width: 800px; /* Adjust as necessary */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Stylish border, change color as needed */
+    border-radius: 8px; /* Slight rounded corners */
+    background-color: #f9f9f9; /* Light background for each project */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Slight rounded corners for images */
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #666;
+    font-size: 1em; /* Adjust as needed */
+    line-height: 1.6; /* Makes text more readable */
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff; /* Stylish button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust the space between contact methods */
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the space between the logo and text */
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Sets text color, adjust as needed */
+    font-size: 1.2em; /* Adjust text size as needed */
+}
+
+.contact-logo {
+    width: 40px; /* Adjust logo size as needed */
+    height: auto; /* Maintains aspect ratio of the logo */
+}
+
+.contact-link:hover .contact-logo {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover for interactivity */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
